@@ -1,0 +1,13 @@
+<html>
+  <head></head>
+  <body>
+    <p>Current Date : <span id="date"></span></p>
+    <script>
+      var d = new Date();
+      var dt = d.getDate();
+      var mon = d.getMonth() + 1;
+      var yr = d.getFullYear();
+      document.getElementById("date").innerHTML = dt + "/" + mon + "/" + yr;
+    </script>
+  </body>
+</html>
