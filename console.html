@@ -1,0 +1,41 @@
+<html>
+  <body>
+    <h1>JavaScript console.assert() Method</h1>
+    <h1>JavaScript console.clear() Method</h1>
+    <h3>JavaScript console.count() Method</h3>
+    <h1>JavaScript console.error() Method</h1>
+    <h2>JavaScript console.groupEnd() Method</h2>
+    <h3>JavaScript console.info() Method</h3>
+    <h1>JavaScript console.log() Method</h1>
+    <h1>JavaScript console.table() Method</h1>
+    <h1>JavaScript console.warning() Method</h1>
+    <p>Assert Message</p>
+    <p>Click the button to clear the console:</p>
+    <button onclick="myFunction()">Clear Console</button>
+
+    <script>
+      console.assert(
+        document.getElementById("demo"),
+        "You have no element with ID 'demo'"
+      );
+      console.log("Hello! Press the button to clear the console!");
+
+      function myFunction() {
+        console.clear();
+      }
+      for (i = 0; i < 10; i++) {
+        console.count();
+      }
+      console.error("You made a mistake");
+      console.log("Hello world!");
+      console.group();
+      console.log("Hello again, this time inside a group!");
+      console.groupEnd();
+      console.log("and we are back.");
+      console.info("Hello world!");
+      console.log("Hello world!");
+      console.table(["Book", "Pen", "Pencil"]);
+      console.warn("This is a warning!");
+    </script>
+  </body>
+</html>
